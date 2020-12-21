@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Trangchu"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="#ffff"
+    >
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <com.darwindeveloper.horizontalscrollmenulibrary.custom_views.HorizontalScrollMenuView
+        android:id="@+id/menu"
+    android:layout_marginTop="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    app:item_backgroundColor="#ffff"
+    app:icon_height="40dp"
+    app:icon_width="40dp"
+    app:item_marginLeft="5dp"
+    app:item_marginRight="5dp"
+    app:item_marginTop="5dp"
+    app:item_marginBottom="5dp"
+        android:background="#F2F2F2"     />
+    <GridView
+        android:id="@+id/gr"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>
